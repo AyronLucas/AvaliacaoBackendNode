@@ -1,17 +1,50 @@
-function soma (num1, num2) {
-    return num1 + num2
+class ServiceCalculadora {
+
+    Soma(num1, num2) {
+        if (isNaN(num1, num2)) {
+            throw new Error("Informe somente números")
+        }
+        return num1 + num2
+    }
+
+    Mult(num1, num2) {
+        if (isNaN(num1, num2)) {
+            throw new Error("Informe somente números")
+        }
+
+        return num1 * num2
+    }
+
+    Sub(num1, num2) {
+        if (isNaN(num1, num2)) {
+            throw new Error("Informe somente números")
+        }
+        return num1 - num2
+    }
+
+    Div(num1, num2) {
+        if (isNaN(num1, num2)) {
+            throw new Error("Informe somente números")
+        }
+        return num1 / num2
+    }
+
+    Potencia(num1, num2) {
+        if (isNaN(num1, num2)) {
+            throw new Error("Informe somente números")
+        }
+        return num1 ** num2
+    }
+
+    Raiz(num1) {
+        if (isNaN(num1, num2)) {
+            throw new Error("Informe somente números")
+        }
+        return num1 ** 0.5
+    }
+
+
+
 }
 
-function mult (num1, num2) {
-    return num1 * num2
-}
-
-function sub (num1, num2) {
-    return num1 - num2
-}
-
-function div (num1, num2) {
-    return num1 / num2
-}
-
-module.exports = (soma, mult, sub, div)
+export default new ServiceCalculadora()
