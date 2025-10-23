@@ -1,16 +1,12 @@
 import { describe, it, expect } from '@jest/globals'
+import ServiceCalculadora from '../src/services/calculadora.js'
+
 
 describe("testando subtração", () => {
     it('subtraindo dois números ', () => {
-        const resultado = Soma(2, 1)
+        const resultado = ServiceCalculadora.Sub(2, 3)
 
-        expect(resultado).toBe(1)
-    })
-
-    it('subtraindo dois números ', () => {
-        const resultado = Soma(2, 1)
-
-        expect(resultado).toBe(1)
+        expect(resultado).toBe(-1)
     })
 
 })
